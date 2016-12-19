@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="IP Camera 및 CCTV 매니저"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        />
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_margin="20dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/discoveryButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="findDevice"
+        android:text="디바이스 찾기" />
+
+
+</LinearLayout>

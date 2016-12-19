@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OnVif Device Manager</string>
+    <string name="error_add_site_device">Failed to Add Site Device</string>
+    <string name="loading">Loading..</string>
+</resources>

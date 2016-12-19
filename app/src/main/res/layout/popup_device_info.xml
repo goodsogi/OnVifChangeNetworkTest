@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="488dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup"
+    >
+
+    <TextView
+        android:id="@+id/popupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="디바이스 정보"
+        android:textColor="#818294"
+        android:textSize="22sp" />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ebecf0"
+        android:layout_below="@id/popupTitle"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:hint="ID를 입력해주세요"
+    android:layout_marginLeft="29dp"
+    android:layout_marginRight="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_below="@id/line"
+    android:id="@+id/idInput"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password를 입력해주세요"
+        android:id="@+id/passwordInput"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_below="@id/idInput"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="디바이스 이름을 입력해주세요"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/deviceNameInput"
+        android:layout_below="@id/passwordInput"
+        />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ebecf0"
+        android:layout_below="@id/deviceNameInput"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_below="@id/line2"
+        >
+        <Button
+            android:layout_width="148dp"
+            android:layout_height="52dp"
+            android:id="@+id/cancel"
+            android:background="@drawable/cancel_button_selector"
+            android:textSize="22sp"
+            android:textColor="@drawable/cancel_button_text_color_selector"
+            android:text="취소"
+            />
+        <Button
+            android:layout_width="148dp"
+            android:layout_height="52dp"
+            android:id="@+id/confirm"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/common_button_selector"
+            android:textSize="22sp"
+            android:textColor="@drawable/common_button_text_color_selector"
+            android:text="확인"
+            />
+
+    </LinearLayout>
+
+
+    </RelativeLayout>
